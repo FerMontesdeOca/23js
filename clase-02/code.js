@@ -107,6 +107,20 @@ switch (calificacion) {
 
 console.log(resultado)
 
+Casa de cambio
+Crea un script con el algoritmo para deducir que a que tipo de moneda sera la conversion:
+
+Tipos de cambio
+
+USD = 19.01
+EURO = 21.03
+LIBRA ESTERLINA = 24.09
+
+-Solicitar al usuario que tipo de moneda y cuanto va converir a pesos mexicanos
+ejem:
+input: 'USD'
+input: 20
+output: el resultado de tu conversion 380.02 pesos mexicanos
 
 
 

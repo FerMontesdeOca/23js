@@ -47,7 +47,7 @@ const buscarNumero = (array, numeroAbuscar) => {
 
 
 /*
-Ejercicio:
+Ejercicio 1:
 Dado el la siguiente estructura de datos obtener
 - La cancion con más reproducciones
 - La cancion con más likes

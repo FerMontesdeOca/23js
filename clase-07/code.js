@@ -41,6 +41,7 @@ const buscarNumero = (array, numeroAbuscar) => {
       accum++;
     }
   }
+
   return `El numero ${numeroAbuscar} se repite ${accum} veces`
 }
 
@@ -48,7 +49,7 @@ const buscarNumero = (array, numeroAbuscar) => {
 
 /*
 Ejercicio 1:
-Dado el la siguiente estructura de datos obtener
+Dado la siguiente estructura de datos obtener
 - La cancion con más reproducciones
 - La cancion con más likes
 */

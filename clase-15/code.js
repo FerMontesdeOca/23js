@@ -177,5 +177,115 @@ const createList = (list) => {
   });
 };
 
-createList(api);
+// createList(api);
 
+
+// const button = document.querySelector('#test');
+
+// button.addEventListener('mouseover', () => {
+//   // createList(api)
+//   console.log('evento de mouseover')
+// });
+// button.addEventListener('mouseout', () => {
+//   // createList(api)
+//   console.log('evento de mouseout')
+// });
+
+// document.querySelector('#input-test').addEventListener('keydown', () => {
+//   // createList(api)
+//   console.log('evento de keydown')
+// });
+
+// document.querySelector('#input-test').addEventListener('keyup', () => {
+//   // createList(api)
+//   console.log('evento de keydown')
+// });
+
+const button = document.querySelector('#open');
+const sidebar = document.querySelector('#sidebar');
+const close = document.querySelector('#close');
+
+button.addEventListener('click', () => {
+  sidebar.classList.remove('close')
+  sidebar.classList.add('open');
+});
+
+close.addEventListener('click', () => {
+  sidebar.classList.remove('open')
+  sidebar.classList.add('close');
+});
+
+const input = document.querySelector('#input-test');
+
+input.addEventListener('change', (event) => {
+  console.log(event.target.value)
+  console.log(event.target)
+});
+
+
+// const inputsList = document.querySelectorAll('#main-input input')
+// console.log(inputsList)
+// inputsList.forEach(( element ) => {
+//   element.addEventListener('change', (event) => {
+//     console.log(event.target.name)
+//     console.log(event.target.value)
+//     console.log(event.target.id)
+//   });
+// });
+
+// const body = document.querySelector('body');
+
+// body.addEventListener('scroll', (event) => {
+//   console.log(event.target)
+// })
+
+// const number = document.querySelector('#number');
+// number.addEventListener('change', (event) => {
+//   console.log(event.target.value)
+// }) 
+
+// const rango = document.querySelector('#rango');
+// rango.addEventListener('change', (event) => {
+//   console.log(event.target.value)
+// }) 
+
+// const select = document.querySelector('#select');
+// select.addEventListener('change', (event) => {
+//   console.log(event.target.value)
+// }) 
+
+
+
+const radio = document.querySelectorAll('.form-check input');
+radio.forEach((element) => {
+  element.addEventListener('change', (event) => {
+    console.log(event.target.name)
+    console.log(event.target.value)
+  });
+})
+
+const date = document.querySelector('#date');
+date.addEventListener('change', (event) => {
+  console.log(event.target.name)
+  console.log(event.target.value)
+});
+
+// crear un formulario el cual tenga
+// first name text
+// last name text
+// birthdate date
+// gender radio button
+// country select
+// lenguajes de ´programacion checkbox  4 opciones
+// description text area
+
+// Agregar un botton que al darle click 
+// - validar que ningun campo este vacio
+// mostar la informacion camptura en un objeto en la consola
+
+// {
+//   firstName: 'asdasdasd',
+//   birthdate: 112-09-02
+// }
+
+// -plus validar que ningun campo este vacio

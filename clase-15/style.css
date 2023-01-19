@@ -66,3 +66,21 @@ span, h2 {
 .text-principal {
     color: rgb(245, 245, 245);
 }
+
+.open {
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    background: white;
+    top: 0;
+
+    padding: 30px;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+.close {
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+}

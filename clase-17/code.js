@@ -109,19 +109,55 @@ const createList = (list) => {
 
 
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+
+const getDatos = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({test:'test'});
+    }, 1500);
+  });
+}
+
+const print = (data) => {
+  console.log(data)
+};
 
 const result = async() => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const data = await response.json();
+    console.log(data)
+    if(data) {
+      print(data)
+    }
+  } catch (error) {
+    return error
+  }
+};
+
+const post = async() => {
+  console.log('entroo')
+  try {
+    const response = await fetch('https://test-b4e2f-default-rtdb.firebaseio.com/-NM65Fp35S2mo4apRZ88.json', {
+      method: '',
+      body: JSON.stringify({test:'jajaja2'}),
+      headers: {"Content-type": "application/json;charset=UTF-8"}
+    });
+    const data = await response.json();
+    console.log(data)
+    if(data) {
+      print(data)
+    }
+  } catch (error) {
+    return error
+  }
 };
 
 
-
-
+post()
 
 
 

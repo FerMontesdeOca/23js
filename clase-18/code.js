@@ -50,10 +50,10 @@ const post = async(persona) => {
     }
   } catch(error) {
     console.log(error)
-    alert(error)
+
   }
 };
-post({ test:'jajaj'})
+// post({ test:'jajaj'})
 
 const put = async(id) => {
   try {
@@ -75,7 +75,21 @@ const put = async(id) => {
 // put('-NMC-G4i66lPdpjP3gKD');
 
 // myFuncion();
-get();
+// get();
+
+// console.log(window.location.search)
+// const url = new URLSearchParams(window.location.search)
+// console.log(url.get('product'))
 
 
 
+
+
+// 1- consultar el objeto window para obtener los query params en string 
+// window.location.href = 'http://localhost:5500/clase-18/?alumno=99&matricula=12312'
+
+// 2- Crear una instancia del prototypo URLSearchParams
+const url = new URLSearchParams(window.location.search);
+
+// 3- utilizar el metodo de get de la instancia pasandole el parametro que se requestAnimationFrame;
+console.log(url.get('alumno'))
